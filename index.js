@@ -20,8 +20,8 @@ if (!ddfRootFolderValidator.ddfFolders$) {
 }
 
 ddfRootFolderValidator
-  .getValidator$()
-  .subscribe(ddfRootFolderValidator.validate);
+  .getValidator()
+  .subscribe(DdfRootFolderValidator.validate(ddfRootFolderValidator));
 
 // validate each ddfFolder
 function validateDdfFolder(ddfFolders$) {
